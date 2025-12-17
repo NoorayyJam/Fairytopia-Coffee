@@ -1,0 +1,124 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif}
+
+@font-face{
+font-family:'Best Journey Demo';
+src:url('../fonts/BestJourneyDemoRegular.ttf') format('truetype');
+font-weight:normal;
+font-style:normal
+}
+
+.about-section{
+background:#f6edd7;
+padding:80px 40px;
+text-align:center
+}
+
+.about-section .section-subtitle{
+font-family:'Best Journey Demo',cursive;
+font-size:22px;
+letter-spacing:3px;
+color:#be9b5b;
+margin-bottom:6px
+}
+
+.about-section .section-title{
+font-size:48px;
+font-weight:800;
+color:#3c2f2f;
+margin-top:10px
+}
+
+.offer-section{
+position:relative;
+height:100vh;
+background:url("../img/section2.png") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center
+}
+
+.offer-section::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(60,47,47,.75);
+z-index:1
+}
+
+.offer-content{
+max-width:800px;
+text-align:center;
+position:relative;
+z-index:2;
+padding:20px;
+font-family:'Montserrat',sans-serif
+}
+
+.offer-discount{
+font-size:68px;
+font-weight:800;
+color:#be9b5b;
+margin-bottom:12px
+}
+
+.offer-title{
+font-size:34px;
+font-weight:700;
+color:#ffffff;
+margin:12px 0;
+position:relative
+}
+
+.offer-title::after{
+content:"";
+width:60px;
+height:2px;
+background:#be9b5b;
+display:block;
+margin:14px auto 0
+}
+
+.offer-text{
+font-size:17px;
+line-height:1.8;
+color:#f6edd7;
+margin:30px 0 40px
+}
+
+.offer-form{
+display:flex;
+max-width:480px;
+margin:auto
+}
+
+.offer-form input{
+flex:1;
+padding:16px 18px;
+border:none;
+outline:none;
+font-size:15px
+}
+
+.offer-form button{
+padding:16px 28px;
+border:none;
+background:#be9b5b;
+color:#3c2f2f;
+font-weight:700;
+cursor:pointer
+}
+
+.offer-form button:hover{
+background:#d2ae6d
+}
+
+@media(max-width:768px){
+.about-section{padding:60px 20px}
+.about-section .section-title{font-size:36px}
+.offer-discount{font-size:54px}
+.offer-title{font-size:24px}
+.offer-text{font-size:15px}
+.offer-form{flex-direction:column}
+.offer-form button{margin-top:10px;padding:14px}
+}
